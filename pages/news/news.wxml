@@ -1,0 +1,13 @@
+<view class='head'>
+  <view class='title'>{{title}}</view>
+  <view class='info'>{{source}} | {{date}} | {{readCount}}</view>
+</view> 
+
+
+<view class='body'>
+  <view wx:for='{{detail}}' wx:key='{{id}}'>
+    <view class='body-text' wx:if='{{item.tag === "p"}}'>{{item.text}}</view>
+    <image class='body-img' wx:elif='{{item.tag === "image"}}' src='{{item.src}}'></image>
+    <view class='body-text' wx:else>{{item.text}}</view>
+  </view>
+</view>

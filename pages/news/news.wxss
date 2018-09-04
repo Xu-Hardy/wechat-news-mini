@@ -1,0 +1,33 @@
+.head {
+  position: relative;
+  margin: 20rpx 20rpx 20rpx 20rpx
+}
+
+.title {
+  font-size: 50rpx;
+  line-height: 70rpx;
+  opacity: 0.8;
+  padding-bottom: 30rpx;
+}
+
+.info {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  padding-bottom: 30rpx;
+  opacity: 0.65;
+}
+
+.body {
+  margin: 20rpx 20rpx 20rpx 20rpx; 
+}
+
+.body-text {
+  font-size: 40rpx;
+  line-height: 70rpx;
+  margin: 20rpx 10rpx 20rpx 10rpx;
+  font-family: "宋体"
+}
+
+.body-img {
+  width: 100%;
+}

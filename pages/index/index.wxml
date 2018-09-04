@@ -1,0 +1,19 @@
+<view class='title-list'>
+  <view class='title-item' wx:for='{{infoMap}}' wx:key='{{id}}' id='{{item.id}}' bindtap='title'>{{item.name}}</view>
+</view>
+
+<view class='news-first' bindtap='bigButton'>
+  <view class='news-title'>{{message[randomIndex].title}}</view>
+  <view class='news-info'>{{message[randomIndex].source}}  {{message[randomIndex].date}}</view>
+  <image class='news-img' src='{{message[randomIndex].img}}'></image>
+</view>
+
+<view class='news-list'>
+  <view class='news-item' wx:for='{{message}}' wx:key='{{id}}' id='{{item.id}}' bindtap='showDetail'>
+    <view class='news-message'>
+      <view class='message-title'>{{item.title}}</view>
+      <view class='message-date'>{{item.source}}  {{item.date}}</view>
+    </view>
+    <image class='message-img' src='{{item.img}}'></image>
+  </view>
+</view>
